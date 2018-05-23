@@ -1,6 +1,14 @@
     # imports
 from lib import prefuncs as func
-from prefuncs import Stack
+from inspect import signature
+
+
+
+
+
+    # arguments count for a function
+def argc(function):
+    return len( signature(function).parameters )
 
 
 
@@ -9,7 +17,7 @@ from prefuncs import Stack
     # syntax execution
 def synt(postfix):
         # variables
-    var = Stack()
+    var = func.Stack()
     exp = list(postfix)
 
 
