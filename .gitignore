@@ -2,6 +2,8 @@
 
 __pycache__/*
 
+System\ Volume\ Information/*
+
 /lib/*.pyc
 
 /lib/__pycache__/*
