@@ -24,7 +24,7 @@ def synt(postfix):
     # operators
     ops = [ '+', '-', '*', '/', '//',
             '%', '^', '!', '$',
-            '#', '##', '(', ')' ]
+            '(', ')' ]
 
 
         # operators
@@ -40,10 +40,7 @@ def synt(postfix):
         '//'    : ( lambda a, b: a // b ),
             # functions
         '!'     : ( lambda x: func.factorial(x) ),
-        '$'     : ( lambda x: func.prime_check(x) ),
-            # output
-        '#'     : ( lambda s: print(s) ),
-        '##'    : ( lambda s: print(s, end=" ") )
+        '$'     : ( lambda x: func.prime_check(x) )
     }
 
         # execution
@@ -52,3 +49,7 @@ def synt(postfix):
             var.push(tok)
         else:                   # for operators
             pass
+
+
+        # output
+    return var.pop()

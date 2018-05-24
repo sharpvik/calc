@@ -17,26 +17,40 @@ from lib import synt
 
 
     # dominican interpreter
-def do(filename):
-        # open file
-    file = open(filename, "r")
+def do(mode, proc, inp):    
+        # -t mode
+        
+        ## process
+    if mode == '-t':
+        compiled = rpn.rpn( pars.pars(inp) )
+        if proc == '-c': print(compiled)
+        else: print( synt.synt(compiled) )
 
 
-        # file processing (line by line)
-    while True:
-        line = file.readline()
-        if line != '': 
-            synt.synt( rpn.rpn( pars.pars(line) ) )    
-            # print(line, end="")
-        else: break
+
+        # -f mode
+    elif mode == '-f':
+        ## open file
+        infile = open(inp, "r")
+        outfile = open(argv[4], "a+")
 
 
-        # close file
-    file.close()
+        ## file processing (line by line)
+        while True:
+            line = infile.readline()
+            if line != '': 
+                compiled = rpn.rpn( pars.pars(line) )
+                if proc == '-c': outfile.write(compiled)
+                else: outfile.write( synt.synt(compiled) )
+            else: break
+
+
+            ## close file
+        infile.close()
 
 
 
 
 
     # invoke the do function
-do(argv[1])
+do( argv[1], argv[2], argv[3], )
