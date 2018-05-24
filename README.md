@@ -5,11 +5,11 @@ Just a little experiment with Reverse Polish Notation and interpreters.
 ## Progress
 
 ```txt
-1. **do.py**            DONE;
-2. **pars.py**          DONE;
-3. **prefuncs.py**      DONE;
-4. **rpn.py**           *in progress...*;
-5. **synt.py**          DONE;
+1. do.py            DONE;
+2. pars.py          DONE;
+3. prefuncs.py      DONE;
+4. rpn.py           in progress...;
+5. synt.py          DONE;
 ```
 
 ## How to Use
