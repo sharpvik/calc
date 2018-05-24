@@ -1,5 +1,5 @@
     # imports
-from lib import prefuncs as func
+import prefuncs as func
 
 
 
