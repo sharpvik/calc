@@ -31,7 +31,7 @@ def synt(postfix):
 
 
         # execution
-    for tok in postfix:
+    for tok in exp:
         if tok not in ops:      # for numbers
             var.push( int(tok) )
         else:                   # for operators
