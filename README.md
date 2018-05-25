@@ -69,7 +69,7 @@ The `mode` tells the function how you want to input and output your expression a
 
 If you want to play with DOMCA in your Terminal and you don't need any file-tossing, just make it `-t` for *Terminal*.
 
-If you do want to read and write to a file, make it `-f` for *file*. Now, you have to remember that in this case you will also have to provide the full path to a source file and the full path to an output file as the third and the fourth argument when invoking DOMCA (see examples in **File read/write method**). If your source file is located in the same folder with *do.py*, you don't have to specify the path to it -- just the filename and its extention (same goes for output file).
+If you do want to read and write to a file, make it `-f` for *file*. Now, you have to remember that in this case you will also have to provide the full path to a source file and the full path to an output file as the third and the fourth argument when invoking DOMCA (see examples in **File Read/Write Method**). If your source file is located in the same folder with *do.py*, you don't have to specify the path to it -- just the filename and its extention (same goes for output file).
 
 ### Proc
 
@@ -79,13 +79,13 @@ If you want DOMCA to simply solve your expression, make it `-s` for *solve*. If 
 
 ## Available Operations
 
-| Operation         |  Sign  | Operation         |  Sign  |
-|:-----------------:|:------:|:-----------------:|:------:|
-| Add               |  +     | Power             | ^      |
-| Subtract          |  -     | Integral Division | //     |
-| Multiply          |  *     | Factorial         | !      |
-| Divide            |  /     | Prime Check       | $      |
-| Modulo            |  %     |
+| Operation         |  Sign  || Operation         |  Sign  |
+|:-----------------:|:------:||:-----------------:|:------:|
+| Add               |  +     || Power             | ^      |
+| Subtract          |  -     || Integral Division | //     |
+| Multiply          |  *     || Factorial         | !      |
+| Divide            |  /     || Prime Check       | $      |
+| Modulo            |  %     || Comment           | #      |
 
 ## Contact
 
