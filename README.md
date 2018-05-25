@@ -111,6 +111,9 @@ You can comment your expressions. To do that, put hash (#) symbol as a first cha
 # prime checks
 19 $
 30 $
+
+# solve 
+1 + 2 * 3 ^ 3 !
 ```
 
 ## Contact
