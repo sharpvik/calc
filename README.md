@@ -5,7 +5,7 @@ Extended functionality. Specialized math functions added.
 ## Progress
 
 | Filename          | Status           |
-|:-----------------:|-----------------:|
+|:-----------------:|:-----------------|
 | *do.py*           | DONE             |
 | *pars.py*         | DONE             |
 | *prefuncs.py*     | in process...    |
