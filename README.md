@@ -105,6 +105,14 @@ Empty lines will be displayed in the output file which allows you to group relat
 
 You can comment your expressions. To do that, put hash (#) symbol as a first character in line and write your comment after that.
 
+```txt
+# comment
+
+# prime checks
+19 $
+30 $
+```
+
 ## Contact
 
 For any personal or business enquiries:
