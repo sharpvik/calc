@@ -79,6 +79,8 @@ If you want DOMCA to simply solve your expression, make it `-s` for *solve*. If 
 
 ## Available Operations
 
+### Table
+
 | Operation         |  Sign  | Operation         |  Sign  |
 |:-----------------:|:------:|:-----------------:|:------:|
 | Add               |  +     | Power             | ^      |
@@ -86,6 +88,22 @@ If you want DOMCA to simply solve your expression, make it `-s` for *solve*. If 
 | Multiply          |  *     | Factorial         | !      |
 | Divide            |  /     | Prime Check       | $      |
 | Modulo            |  %     | Comment           | #      |
+
+### File Format
+
+While playing with DOMCA in your Terminal, the only thing you can do is write your expression and see what DOMCA prints back. However remember, you can also create files with supported expressions, make DOMCA read it and write solutions to another file (see *File Read/Write Method); and when you're giving DOMCA an input file instead of using it from the Terminal you get somewhat expanded functionality.
+
+#### Speech Marks
+
+Since you are writing your expression to a file, you don't have to put it in speech marks. How cool is that!
+
+#### Spacing
+
+Empty lines will be displayed in the output file which allows you to group related expressions visually.
+
+#### Commenting
+
+You can comment your expressions. To do that, put hash (#) symbol as a first character in line and write your comment after that.
 
 ## Contact
 
