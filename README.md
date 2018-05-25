@@ -1,4 +1,4 @@
-# DOMCA -- Dominican Calculator (Beta)
+# DOMCA -- Dominican Calculator
 
 Turn infix to postfix. Solve expressions. Be cool.
 
