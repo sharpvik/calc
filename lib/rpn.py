@@ -1,6 +1,6 @@
     # imports
-import prefuncs as func
-from stackD import Stack
+from lib import prefuncs as func
+from lib import stackD 
 
 
 
@@ -9,7 +9,7 @@ from stackD import Stack
     # reverse polish notation
 def rpn(toks):
         # variables
-    stack = Stack()
+    stack = stackD.Stack()
     exp = list(toks)
     postfix = list()    # output list
 
@@ -47,7 +47,19 @@ def rpn(toks):
         if tok not in ops:          # for numbers
             postfix.append(tok)
         else:                       # for operators
-            pass
+            if tok == '(':
+                stack.push(tok)
+            elif tok == ')':
+                top_tok = stack.pop()
+                while top_tok != '(':
+                    postfix.append(top_tok)
+                    top_tok = stack.pop()
+            elif stack.peek() == '(':
+                stack.push(tok)
+            else:
+                while not stack.is_empty() and not higher_prec( tok, stack.peek() ):
+                    postfix.append( stack.pop() )
+                stack.push(tok)
 
     
     while not stack.is_empty():     # empty the stack

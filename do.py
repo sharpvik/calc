@@ -1,6 +1,6 @@
 # --->   DOLANG INTERPRETER   <---
 # File format:      .do
-# Terminal use:     $~ python do.py filename.do
+# Terminal use:     $~ python do.py <mode> <proc> <input>
 
 #!/usr/bin/python
 
@@ -32,6 +32,7 @@ def do(mode, proc, inp):
     elif mode == '-f':
         ## open file
         infile = open(inp, "r")
+        outfile = open(argv[4], "w").close()    # empty the output file
         outfile = open(argv[4], "a+")
 
 
@@ -39,9 +40,12 @@ def do(mode, proc, inp):
         while True:
             line = infile.readline()
             if line != '': 
-                compiled = rpn.rpn( pars.pars(line) )
-                if proc == '-c': outfile.write( " ".join(compiled) )
-                else: outfile.write( synt.synt(compiled) )
+                if line[0] == '#': outfile.write(line)
+                elif line == '\n': outfile.write('\n')
+                else:
+                    compiled = rpn.rpn( pars.pars(line) )
+                    if proc == '-c': outfile.write( " ".join(compiled) )
+                    else: outfile.write( "{}\n".format( str( synt.synt(compiled) ) ) )
             else: break
 
 
@@ -53,4 +57,4 @@ def do(mode, proc, inp):
 
 
     # invoke the do function
-do( argv[1], argv[2], argv[3], )
+do( argv[1], argv[2], argv[3] )

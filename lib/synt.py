@@ -1,6 +1,6 @@
     # imports
-import prefuncs as func
-from stackD import Stack
+from lib import prefuncs as func
+from lib import stackD 
 from inspect import signature
 
 
@@ -10,7 +10,7 @@ from inspect import signature
     # syntax execution
 def synt(postfix):
         # variables
-    var = Stack()
+    var = stackD.Stack()
     exp = list(postfix)
 
 

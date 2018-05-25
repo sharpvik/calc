@@ -13,7 +13,8 @@ class Stack:                                # standard stack datatype;
         return temp
 
     def peek(self):                         # --> function returns the last value pushed to the Stack;
-        return self.storage[-1]
+        try: return self.storage[-1]
+        except IndexError: pass
 
     def length(self):                       # --> function returns number of elements in the Stack;
         return len(self.storage)
