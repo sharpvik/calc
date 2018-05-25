@@ -44,7 +44,7 @@ def do(mode, proc, inp):
                 elif line == '\n': outfile.write('\n')
                 else:
                     compiled = rpn.rpn( pars.pars(line) )
-                    if proc == '-c': outfile.write( " ".join(compiled) )
+                    if proc == '-c': outfile.write( "{}\n".format( " ".join(compiled) ) )
                     else: outfile.write( "{}\n".format( str( synt.synt(compiled) ) ) )
             else: break
 
