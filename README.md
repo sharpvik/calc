@@ -79,17 +79,13 @@ If you want DOMCA to simply solve your expression, make it `-s` for *solve*. If 
 
 ## Available Operations
 
-| Operation         |  Sign  |
-|:-----------------:|:------:|
-| Add               |  +     |
-| Subtract          |  -     |
-| Multiply          |  *     |
-| Divide            |  /     |
+| Operation         |  Sign  | Operation         |  Sign  |
+|:-----------------:|:------:|:-----------------:|:------:|
+| Add               |  +     | Power             | ^      |
+| Subtract          |  -     | Integral Division | //     |
+| Multiply          |  *     | Factorial         | !      |
+| Divide            |  /     | Prime Check       | $      |
 | Modulo            |  %     |
-| Power             |  ^     |
-| Intergal Division |  //    |
-| Factorial         |  !     |
-| Prime Check       |  $     |
 
 ## Contact
 
