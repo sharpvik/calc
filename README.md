@@ -8,9 +8,9 @@ Turn infix to postfix. Solve expressions. Be cool.
 |:-----------------:|:-----------------|
 | *do.py*           | DONE             |
 | *pars.py*         | DONE             |
-| *prefuncs.py*     | in process...    |
-| *rpn.py*          | in process...    |
-| *synt.py*         | in process...    |
+| *prefuncs.py*     | DONE             |
+| *rpn.py*          | DONE             |
+| *synt.py*         | DONE             |
 
 ## How to Use
 
@@ -111,6 +111,9 @@ You can comment your expressions. To do that, put hash (#) symbol as a first cha
 # prime checks
 19 $
 30 $
+
+# solve 
+1 + 2 * 3 ^ 3 !
 ```
 
 ## Contact
