@@ -1,6 +1,6 @@
 # DOMCA -- Dominican Calculator (Beta)
 
-Extended functionality. Specialized math functions added.
+Turn infix to postfix. Solve expressions. Be cool.
 
 ## Progress
 
