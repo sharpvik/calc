@@ -22,33 +22,36 @@ def rpn(toks):
 
         # order of precedence
     prec = {
-        1   : [ "(" ],
-        2   : [ "!" ],
-        3   : [ "^" ],
-        4   : [ "*", "/", "//", "%" ],
-        5   : [ "+", "-" ],
-        6   : [ "$" ]
+        1   : [ "!" ],
+        2   : [ "^" ],
+        3   : [ "*", "/", "//", "%" ],
+        4   : [ "+", "-" ],
+        5   : [ "$" ]
     }
 
 
         # functions
-    def higher_prec(op):
-        op_level = int()
-        last_level = int()
+    def higher_prec(test, against):
+        test_level = int()
+        against_level = int()
 
-        for each in prec:
-            if op in each: op_level = each
-            if stack.last() in each: last_level = each
+        for level in prec:
+            if test in prec[level]: test_level = level
+            if against in prec[level]: against_level = level
 
-        return True if op_level < last_level else False
+        return test_level < against_level
 
 
         # rpn formation
-    for token in exp:
-        if token not in ops:    # for numbers
-            postfix.append(token)
-        else:                   # for operators
+    for tok in exp:
+        if tok not in ops:          # for numbers
+            postfix.append(tok)
+        else:                       # for operators
             pass
+
+    
+    while not stack.is_empty():     # empty the stack
+        postfix.append( stack.pop() )
 
 
         # output

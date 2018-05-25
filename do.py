@@ -23,7 +23,7 @@ def do(mode, proc, inp):
         ## process
     if mode == '-t':
         compiled = rpn.rpn( pars.pars(inp) )
-        if proc == '-c': print(compiled)
+        if proc == '-c': print( " ".join(compiled) )
         else: print( synt.synt(compiled) )
 
 
@@ -40,7 +40,7 @@ def do(mode, proc, inp):
             line = infile.readline()
             if line != '': 
                 compiled = rpn.rpn( pars.pars(line) )
-                if proc == '-c': outfile.write(compiled)
+                if proc == '-c': outfile.write( " ".join(compiled) )
                 else: outfile.write( synt.synt(compiled) )
             else: break
 

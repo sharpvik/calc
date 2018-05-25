@@ -1,9 +1,6 @@
 class Stack:                                # standard stack datatype;
     def __init__(self, element=None):
-        if isinstance(element, list):
-            self.storage = element
-        else:
-            self.storage = [element]
+        self.storage = list()
         
     def push(self, element):                # element(int / str) -- element you want to add into the Stack;
                                             # --> function returns name of the added elment;

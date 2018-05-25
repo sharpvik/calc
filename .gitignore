@@ -7,3 +7,5 @@ System\ Volume\ Information/*
 /lib/*.pyc
 
 /lib/__pycache__/*
+
+/lib/rpntest.py
