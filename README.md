@@ -1,6 +1,6 @@
-# DOMCA -- Dominican Calculator
+# DOMCA -- Dominican Calculator (Beta)
 
-Just a little experiment with Reverse Polish Notation and interpreters.
+Extended functionality. Specialized math functions added.
 
 ## Progress
 
@@ -8,9 +8,9 @@ Just a little experiment with Reverse Polish Notation and interpreters.
 |:-----------------:|-----------------:|
 | *do.py*           | DONE             |
 | *pars.py*         | DONE             |
-| *prefuncs.py*     | DONE             |
-| *rpn.py*          | DONE             |
-| *synt.py*         | DONE             |
+| *prefuncs.py*     | in process...    |
+| *rpn.py*          | in process...    |
+| *synt.py*         | in process...    |
 
 ## How to Use
 
