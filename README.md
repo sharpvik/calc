@@ -19,7 +19,7 @@ Just a little experiment with Reverse Polish Notation and interpreters.
     + Input / output through the Terminal or
     + Read / write to a file
 
-### Terminal method
+### Terminal Method
 
 1. Launch Terminal in the folder;
 2. Launch DOMCA as shown in the code snippet below;
@@ -37,7 +37,7 @@ Invocation example:
 $~ python do.py -t -c "3 + 4 * 2 - ( 3 ^ 2 )"
 ```
 
-### File read/write method
+### File Read/Write Method
 
 1. Launch Terminal in the folder;
 2. Launch DOMCA as shown in the code snippet below;
