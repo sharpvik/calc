@@ -1,5 +1,6 @@
     # imports
 import prefuncs as func
+from stackD import Stack
 
 
 
@@ -8,7 +9,7 @@ import prefuncs as func
     # reverse polish notation
 def rpn(toks):
         # variables
-    stack = func.Stack()
+    stack = Stack()
     exp = list(toks)
     postfix = list()    # output list
 

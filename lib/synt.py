@@ -1,5 +1,6 @@
     # imports
 import prefuncs as func
+from stackD import Stack
 from inspect import signature
 
 
@@ -9,7 +10,7 @@ from inspect import signature
     # syntax execution
 def synt(postfix):
         # variables
-    var = func.Stack()
+    var = Stack()
     exp = list(postfix)
 
 
@@ -32,9 +33,9 @@ def synt(postfix):
 
         # execution
     for tok in exp:
-        if tok not in ops:      # for numbers
+        if tok not in ops:                      # for numbers
             var.push( int(tok) )
-        else:                   # for operators
+        else:                                   # for operators
             if tok == '!' or tok == '$':        # for toks with 1 arg
                 arg = var.pop()
                 var.push( ops[tok](arg) )
