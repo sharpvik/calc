@@ -6,11 +6,11 @@ Just a little experiment with Reverse Polish Notation and interpreters.
 
 | Filename          | Status           |
 |:-----------------:|-----------------:|
-| **do.py**         | DONE             |
-| **pars.py**       | DONE             |
-| **prefuncs.py**   | DONE             |
-| **rpn.py**        | DONE             |
-| **synt.py**       | DONE             |
+| *do.py*           | DONE             |
+| *pars.py*         | DONE             |
+| *prefuncs.py*     | DONE             |
+| *rpn.py*          | DONE             |
+| *synt.py*         | DONE             |
 
 ## How to Use
 
