@@ -9,7 +9,7 @@ Just a little experiment with Reverse Polish Notation and interpreters.
 | **do.py**         | DONE             |
 | **pars.py**       | DONE             |
 | **prefuncs.py**   | DONE             |
-| **rpn.py**        | *in progress...* |
+| **rpn.py**        | DONE             |
 | **synt.py**       | DONE             |
 
 ## How to Use
@@ -76,6 +76,20 @@ If you do want to read and write to a file, make it `-f` for *file*. Now, you ha
 The second parameter `proc` tells the function whether you want your expression solved or transformed into Reversed Polish Notation (aka Postfix or RPN).
 
 If you want DOMCA to simply solve your expression, make it `-s` for *solve*. If you want to transform your equation into RPN, make it `-c` for *compile*.
+
+## Available Operations
+
+| Operation         | Sign |
+|:-----------------:|------|
+| Add               | +    |
+| Subtract          | -    |
+| Multiply          | *    |
+| Divide            | /    |
+| Modulo            | %    |
+| Power             | ^    |
+| Intergal Division | //   |
+| Factorial         | !    |
+| Prime Check       | $    |
 
 ## Contact
 
