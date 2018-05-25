@@ -112,7 +112,7 @@ You can comment your expressions. To do that, put hash (#) symbol as a first cha
 19 $
 30 $
 
-# solve 
+# solve
 1 + 2 * 3 ^ 3 !
 ```
 
