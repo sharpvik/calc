@@ -81,11 +81,11 @@ If you want DOMCA to simply solve your expression, make it `-s` for *solve*. If 
 
 ### Table
 
-| Operation         |  Sign  | Operation         |  Sign  |
-|:-----------------:|:------:|:-----------------:|:------:|
-| Add               | +      | Power             | ^      |
-| Subtract          | -      | Mdoulo            | %      |
-| Multiply          | *      | Factorial         | !      |
+| Operation         |  Sign  | Operation         |  Sign  | Operation         |  Sign  |
+|:-----------------:|:------:|:-----------------:|:------:|:-----------------:|:------:|
+| Add               | +      | Power             | ^      | nPr               | nPr    |
+| Subtract          | -      | Mdoulo            | %      | nCr               | nCr    |
+| Multiply          | *      | Factorial         | !      | ...               | ...    |
 | Divide            | /      | Prime Check       | $      |
 | Integral Division | //     | Comment           | #      |
 
