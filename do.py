@@ -1,7 +1,3 @@
-# --->   DOLANG INTERPRETER   <---
-# File format:      .do
-# Terminal use:     $~ python do.py <mode> <proc> <input>
-
 #!/usr/bin/python
 
 
