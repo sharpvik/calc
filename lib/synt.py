@@ -27,7 +27,9 @@ def synt(postfix):
         '//'    : ( lambda a, b: a // b ),
             # functions
         '!'     : ( lambda x: func.factorial(x) ),
-        '$'     : ( lambda x: func.prime_check(x) )
+        '$'     : ( lambda x: func.prime_check(x) ),
+        'nPr'   : ( lambda n, r: func.nPr(n, r) ),
+        'nCr'   : ( lambda n, r: func.nCr(n, r) )
     }
 
 
