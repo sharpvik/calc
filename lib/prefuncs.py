@@ -18,8 +18,11 @@ def prime_check(n):                     # n(int) -- any positive number; --> fun
 
 
 def factorial(n):   # n(int) -- any positive number; --> function returns n!;
-    if n > 1: return factorial(n - 1) * n
-    else: return 1
+    fact = n
+    if n > 2: 
+        for i in range(n - 1, 0, -1):
+            fact *= i
+    return fact
 
 
 def nPr(n, r):      # n(int) -- number of items; r(int) -- number of positions; --> function returns number of permutations of n elements for r positions;
