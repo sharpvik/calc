@@ -84,7 +84,7 @@ If you want DOMCA to simply solve your expression, make it `-s` for *solve*. If 
 | Operation         |  Sign  | Operation         |  Sign  |
 |:-----------------:|:------:|:-----------------:|:------:|
 | Add               | +      | Power             | ^      |
-| Subtract          | -      | Mdoulo            | %      |
+| Subtract          | -      | Modulo            | %      |
 | Multiply          | *      | Factorial         | !      |
 | Divide            | /      | Prime Check       | $      |
 | Integral Division | //     | Comment           | #      |
