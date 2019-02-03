@@ -23,32 +23,32 @@ Turn infix to postfix. Solve expressions. Be cool.
 
 1. Launch Terminal in the folder;
 2. Launch DOMCA as shown in the code snippet below;
-3. Don't forget to put your expression in speech marks;
+3. Input your expression and press ENTER;
 
 General invocation format:
 
 ```terminal
-$~ python do.py -t <processmode> "<expression>"
+$~ python do.py -t <processmode>
 ```
 
 Invocation example:
 
 ```terminal
-$~ python do.py -t -c "3 + 4 * 2 - ( 3 ^ 2 )"
+$~ python do.py -t -c
 ```
 
 ### File Read/Write Method
 
 1. Launch Terminal in the folder;
 2. Launch DOMCA as shown in the code snippet below;
-3. Specify full path to your source file including filename and its extention;
-4. Specify full path to the output file including filename and its extention;
+3. Specify full path to your source file including filename and its extension;
+4. Specify full path to the output file including filename and its extension;
 5. You must put path in speech marks if at least one of the folders in it contains spaces;
 
 General invocation format:
 
 ```terminal
-$~ python do.py -f <processmode> "<sorurce: path and filename>" "<output: path and filename>"
+$~ python do.py -f <processmode> "<source: path and filename>" "<output: path and filename>"
 ```
 
 Invocation example:
@@ -69,7 +69,7 @@ The `mode` tells the function how you want to input and output your expression a
 
 If you want to play with DOMCA in your Terminal and you don't need any file-tossing, just make it `-t` for *Terminal*.
 
-If you do want to read and write to a file, make it `-f` for *file*. Now, you have to remember that in this case you will also have to provide the full path to a source file and the full path to an output file as the third and the fourth argument when invoking DOMCA (see examples in **File Read/Write Method**). If your source file is located in the same folder with *do.py*, you don't have to specify the path to it -- just the filename and its extention (same goes for output file).
+If you do want to read and write to a file, make it `-f` for *file*. Now, you have to remember that in this case you will also have to provide the full path to a source file and the full path to an output file as the third and the fourth argument when invoking DOMCA (see examples in **File Read/Write Method**). If your source file is located in the same folder with *do.py*, you don't have to specify the path to it -- just the filename and its extension (same goes for output file).
 
 ### Proc
 
@@ -91,7 +91,7 @@ If you want DOMCA to simply solve your expression, make it `-s` for *solve*. If 
 
 ### File Format
 
-While playing with DOMCA in your Terminal, the only thing you can do is write your expression and see what DOMCA prints back. However remember, you can also create files with supported expressions, make DOMCA read it and write solutions to another file (see *File Read/Write Method); and when you're giving DOMCA an input file instead of using it from the Terminal you get somewhat expanded functionality.
+While playing with DOMCA in your Terminal, the only thing you can do is write your expression and see what DOMCA prints back. However remember, you can also create files with supported expressions, make DOMCA read it and write solutions to another file (see *File Read/Write Method*); and when you're giving DOMCA an input file instead of using it from the Terminal you get somewhat expanded functionality.
 
 #### Speech Marks
 

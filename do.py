@@ -4,30 +4,28 @@
 
     # imports
 from sys import argv
-from lib import pars
-from lib import rpn
-from lib import synt
+from lib import pars, rpn, synt
 
 
 
 
 
     # dominican interpreter
-def do(mode, proc, inp):    
+def do(mode, proc):    
         # -t mode
-        
-        ## process
     if mode == '-t':
-        compiled = rpn.rpn( pars.pars(inp) )
-        if proc == '-c': print( " ".join(compiled) )
-        else: print( synt.synt(compiled) )
+        while True:
+            inp = input('->')
+            compiled = rpn.rpn( pars.pars(inp) )
+            if proc == '-c': print( " ".join(compiled) )
+            else: print( synt.synt(compiled) )
 
 
 
         # -f mode
     elif mode == '-f':
         ## open file
-        infile = open(inp, "r")
+        infile = open(argv[3], "r")
         outfile = open(argv[4], "w").close()    # empty the output file
         outfile = open(argv[4], "a+")
 
@@ -53,4 +51,4 @@ def do(mode, proc, inp):
 
 
     # invoke the do function
-do( argv[1], argv[2], argv[3] )
+do(argv[1], argv[2])
