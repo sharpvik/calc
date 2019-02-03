@@ -91,7 +91,7 @@ If you want DOMCA to simply solve your expression, make it `-s` for *solve*. If 
 
 ### File Format
 
-While playing with DOMCA in your Terminal, the only thing you can do is write your expression and see what DOMCA prints back. However remember, you can also create files with supported expressions, make DOMCA read it and write solutions to another file (see *File Read/Write Method*); and when you're giving DOMCA an input file instead of using it from the Terminal you get somewhat expanded functionality.
+While playing with DOMCA in your Terminal, the only thing you can do is write your expression and see what DOMCA prints back. However remember, you can also create files with supported extensions, make DOMCA read it and write solutions to another file (see *File Read/Write Method*); and when you're giving DOMCA an input file instead of using it from the Terminal you get somewhat expanded functionality.
 
 #### Speech Marks
 
