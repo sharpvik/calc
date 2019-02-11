@@ -34,11 +34,9 @@ def pars(exp):
     for char in exp:
         # endline reached
         if char == '\r':
-            if state == 'number':
+            if state is not None:
                 toks.append(current_tok)
-                return toks
-            else:
-                raise ValueError('Expression incomplete. Operator cannot be the last token.')
+            return toks
         
         # first char hit
         if state is None:
