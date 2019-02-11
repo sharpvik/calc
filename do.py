@@ -14,11 +14,24 @@ from lib import pars, rpn, synt
 def do(mode, proc):    
         # -t mode
     if mode == '-t':
-        while True:
-            inp = input('->')
-            compiled = rpn.rpn( pars.pars(inp) )
-            if proc == '-c': print( " ".join(compiled) )
-            else: print( synt.synt(compiled) )
+        def render():
+            exp = inp.get()
+            compiled = rpn.rpn( pars.pars(exp) )
+            if proc == '-c': 
+                answer.set( " ".join(compiled) )
+            else: 
+                answer.set( synt.synt(compiled) )
+        
+        import tkinter
+        master = tkinter.Tk()
+        inp = tkinter.Entry(master)
+        inp.pack()
+        answer = tkinter.StringVar()
+        tkinter.Label(master, textvariable=answer).pack()
+        answer.set("Solution will appear here.")
+        submit = tkinter.Button(master, text="=", command=render)
+        submit.pack()
+        master.mainloop()
 
 
 

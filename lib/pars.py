@@ -20,7 +20,7 @@ def identify_char(char):
     
 
 def pars(exp):
-    # valudate initial expression
+    # validate initial expression
     if len(exp) == 0:
         return None
     
@@ -58,9 +58,16 @@ def pars(exp):
         if char_identity is None:
             raise ValueError('Invalid expression. Unregistered symbol was detected.')
             return None
+            
+        # tok is a bracket
+        if char in '()':
+            toks.append(current_tok)
+            toks.append(char)
+            current_tok = str()
+            state = None
         
         # tok continues
-        if char_identity == state:
+        elif char_identity == state:
             current_tok += char
         
         # state change
